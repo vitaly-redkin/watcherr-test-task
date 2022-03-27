@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Task 1</title>
+</head>
+<body>
+<table border="1" cellpadding="2">
+    <thead>
+         <tr>
+             <th>
+                 Name
+             </th>
+             <th>
+                 Post Code
+             </th>
+             <th>
+                 Coordinates
+             </th>
+         </tr>
+    </thead>
+    <tbody>
+        {% for store in stores %}
+        <tr>
+            <td>
+                {{ escape(store["name"]) }}
+            </td>
+            <td>
+                {{ escape(store["postcode"]) }}
+            </td>
+            <td>
+                <a href='https://maps.google.com/?ie=UTF8&q={{ store["latitude"] }},{{ store["longitude"] }}&z=13'
+                   target="_blank">
+                {{ store["longitude"] }}, {{ store["latitude"] }}
+                </a>
+            </td>
+        </tr>
+        {% end %}
+    </tbody>
+</table>
+</body>
+</html>
