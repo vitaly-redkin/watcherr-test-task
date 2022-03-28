@@ -59,6 +59,7 @@ def get_nearest_postcodes(postcode: str, radius: int, limit: int, widesearch: bo
     locations.sort(key=lambda loc: -loc['latitude'])
     return [item['postcode'] for item in locations]
 
+
 def check_response(response: requests.Response):
     """
     Check if response is successful. Raises an exception otherwise.
