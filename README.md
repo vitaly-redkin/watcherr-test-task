@@ -17,6 +17,11 @@ and then
 $ docker-compose up
 ```
 
+**Note: the `client/Dockerfile` file uses the React development server - this is *not*
+how I deploy the React apps to production. But since my primary purpose was to show how
+the app works without making you wait - the React dev server runs faster then building 
+the production build.
+
 ### Task 1
 
 To test the task 1 (Python endpoint) open this URL in your browser:
