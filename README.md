@@ -82,21 +82,32 @@ primitive and lack any kind of error handling).
     - I will use `react-query`/`axios` instead of using the barebone `fetch()` call -
     they really save the time and enforce the robust architecture.
     
-2. What part did you find the hardest?
+2. Make sure you indicate the time you have spent in the README.md file among other metadata.
+    - The approximate breakdown looks like:
+        - 2h studying the task and checking postcode.io (which ndpoint to use, etc.)
+        - 1h checking the Tornado framework (I mostly used Flask/FastAPI before)
+        - 2h buiding the Task 1 end-point
+        - 3h building and creating tests for the Task 1a endpoint
+        - 2h building Task2 endpoint
+        - 2h creating React app, using endpoint, solving CORS problems
+        - 1h creating Docker files
+        - 2h writing this readme.md file
+    
+3. What part did you find the hardest?
     - There was nothing really hard to do - save for the making myself to use the
     frameworks (like Tornado/requests) instead of reinventing ll the wheels as you asked.
     
- 3. What part are you most proud of? In both cases, why?
+ 4. What part are you most proud of? In both cases, why?
     - There is nothing to write home about, really...
     
- 4. What is one thing we could do to improve this test?
+ 5. What is one thing we could do to improve this test?
     - With all due respect I did not get the "reinvent the wheel" part of the test.
     Do you guys avoid using the available libs and frameworks in the real life and
     build the web servers from scratch? I do agree Django (or even Flask) is overkill
     for such task but why not to say "use Tornado and whatever else you need and concentrate
     on the business logic"? 
     
- 5. Code your own constructs and 2 very general reusable methods you use over and over again.
+ 6. Code your own constructs and 2 very general reusable methods you use over and over again.
     - There is a reusable function named `extend_dict_list()` in the `server\utis.py` file - it 
     implements something like the "left join" (or rather a `lookup()` from MongoDB)
     - There is a reusable function named `check_response()` in the `server\postcode_lookup.py`
